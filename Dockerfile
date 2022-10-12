@@ -1,4 +1,5 @@
 FROM openjdk:11-jre-slim
+ARG JAR_FILE
 EXPOSE 8080
-COPY ./build/libs/spring-petclinic-kotlin-*.jar spring-petclinic-kotlin.jar
-ENTRYPOINT ["java", "-jar", "/spring-petclinic-kotlin.jar"]
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
