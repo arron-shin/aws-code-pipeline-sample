@@ -50,8 +50,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-
-    implementation("io.micrometer:micrometer-core")
     implementation("io.micrometer:micrometer-registry-prometheus")
     implementation("javax.cache:cache-api")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
