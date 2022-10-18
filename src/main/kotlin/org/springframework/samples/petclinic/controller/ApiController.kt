@@ -11,8 +11,8 @@ import java.math.BigInteger
 class ApiController {
 
     @GetMapping("/{number}")
-    fun stress(@PathVariable number: Int): String {
-        return calculateFactorialInMainThreadUsingYield(number).toString()
+    fun stress(@PathVariable number: Int): BigInteger {
+        return calculateFactorialInMainThreadUsingYield(number)
     }
 
     private fun calculateFactorialInMainThreadUsingYield(number: Int): BigInteger {
