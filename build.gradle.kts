@@ -33,8 +33,8 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-tasks.bootJar {enabled = true}
-tasks.jar {enabled = false}
+tasks.bootJar { enabled = true }
+tasks.jar { enabled = false }
 
 repositories {
     mavenCentral()
